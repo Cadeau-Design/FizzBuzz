@@ -73,4 +73,37 @@ function showTypeOfNumber(num){
 	}
 }
 
+//New code
+//Reading objects propriety
+
+const film = {
+	title: 'All About My Mother',
+	year: 1999,
+	director: 'Pedro Almodovar',
+	mainPersonagem: 'Manuela Echevarria',
+} 
+showProprieties(film);
+function showProprieties(obj) {
+	for (prop in obj)
+		if(typeof obj[prop] === 'string')
+			console.log(prop,obj[prop])
+}
+
+
+//New code
+//Print number that a sum of the numbers that are multiple of 3 and 5 
+
+sum(20);
+function sum(num) {
+	let multipleOf3 = 0;
+	let multipleOf5 = 0;
+	for(i =0;i <= num; i++) {
+		(i % 3 === 0)
+		multipleOf3 += i;
+		if(i % 5 === 0)
+		multipleOf5 += i;
+	}
+	console.log(multipleOf3 + multipleOf5)
+
+}
 
