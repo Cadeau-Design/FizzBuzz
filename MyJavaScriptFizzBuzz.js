@@ -4,22 +4,25 @@
 //Not divided neither by 3 nor 5 = number
 //Not a number = 'not a number'
 
-const result = fizzBuzz(15);
+const result = fizzBuzz('meu nome');
 console.log(result);
 
-function fizzBuzz(any) {
-    if (any % 3 ===0 && any % 5 === 0)
+function fizzBuzz(num) {
+    if (num % 3 ===0 && num % 5 === 0)
         return 'FizzBuzz';
-    if (typeof any  !== 'number')
+    if (typeof num  !== 'number')
         return 'Not a number';
-    if (any % 3 === 0)
+    if (num % 3 === 0)
         return 'Fizz';
-    if (any % 5 === 0)
+    if (num % 5 === 0)
        return 'Buzz';
+	return num;
+	
+}
 
     ///New code 
     
-}for (var i = 1; i <= 100; i++) {
+for (var i = 1; i <= 100; i++) {
 	var isDividibleByThree = i % 3 === 0;
 	var isDivisibleByFive = i % 5 === 0;
 
