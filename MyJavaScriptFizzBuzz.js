@@ -1,3 +1,17 @@
+//Playing with Array
+
+var fruits = ['apple', 'watermelon', 'strawberry', 'banana','orange']
+console.log(fruits.length);
+var add = fruits.push('avocado');
+console.log(fruits);
+
+fruits.forEach(function (item, indice, array) {
+	console.log(item, indice);
+  });
+
+  
+
+
 //Divided by 3 = Fizz
 //Divided by 5 = Buzz
 //Divided by 3 and 5 = FizzBuzz
@@ -106,4 +120,6 @@ function sum(num) {
 	console.log(multipleOf3 + multipleOf5)
 
 }
+
+
 
