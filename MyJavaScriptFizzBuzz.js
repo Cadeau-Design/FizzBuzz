@@ -39,3 +39,25 @@ for (var i = 1; i <= 100; i++) {
 		console.log(i);
 	}
 }
+
+//New code
+//Speed Limit = 70 mph
+//each 5mph over the limit get 1 point
+//if points are > 12 -> license is suspended
+
+verifySpeed(180);
+function verifySpeed (speed) {
+	const maxSpeed = 70;
+	const mphPerPoint = 5;
+	if (speed <= maxSpeed)
+		console.log('Ok');
+	else {
+		const points = Math.floor((speed - maxSpeed) / mphPerPoint);
+		if (points >= 12)
+		console.log('License Suspended');
+		else 
+		console.log('points', points);
+	}
+}
+
+
