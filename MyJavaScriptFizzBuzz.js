@@ -121,5 +121,14 @@ function sum(num) {
 
 }
 
+//New code
+//Showing and  Couting  Asterisk 
 
-
+showAsterisk(10);
+function showAsterisk(lines) {
+	let main = '';
+	for(let line = 1; line <= lines; line++) {
+		main += '*';
+		console.log(main);
+	}
+}
